@@ -1,0 +1,154 @@
+body{
+   font-family: 'Work Sans', 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+
+}
+
+.header {
+background-image: url("assets/images/background-pattern-mobile.svg");
+width:100% ;
+height:200px;
+position: relative;
+}
+
+.faq{
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    color: hsl(292, 42%, 14%);
+}
+
+.star{
+    margin-left: 18px;
+}
+
+.parent-container {
+  position: relative;
+  background-color: hsl(275, 100%, 97%);
+    height:auto ;
+  min-height: 100vh;
+}
+
+
+
+.box{
+ position:relative;
+    background-color: hsl(0, 100%, 100%);
+    width: 90%;
+  
+    max-width:  250px;
+    border-radius: 8px;
+    top: -102px;
+    margin:0 auto;
+    padding:25px;
+   
+}
+
+.faq-question{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.faq-answer {
+  display: none; /* hide initially */
+}
+
+
+
+
+
+
+
+/* Tablets */
+@media (min-width: 768px) { 
+    .box {
+    top:-140px ;
+    width: 500px;      
+    max-width: none;
+    margin: 0 auto;
+}
+}
+
+/* Small laptops */
+@media (min-width: 1024px) {
+    .box {
+        top:-140px;
+    width: 750px;      
+    max-width: none;
+     
+}
+
+    h1, h3 {
+    font-weight: 700;
+}
+
+p {
+    font-weight: 400; 
+
+ }
+}
+
+/* Laptops */
+@media (min-width: 1280px) {
+ .box {
+    width: 800px;      
+    max-width: none;
+    top:-130px;
+    }
+
+    h1, h3 {
+    font-weight: 700;
+}
+
+p {
+    font-weight: 400; 
+
+ }
+
+ body{
+    font-size: 20px;
+ }
+ }
+
+
+ /* Desktop-only for 1440px width */
+@media (min-width: 1440px) {
+
+  .header {
+    height: 400px;
+    background-image: url("assets/images/background-pattern-desktop.svg"); /* optional desktop background */
+  }
+
+  /* Box adjustments */
+  .box {
+    width: 600px;      
+    max-width: none;   
+    top: -350px;     
+    margin: 0 auto;   
+    padding: 40px;    
+  }
+
+  /* Parent container adjustments */
+  .parent-container {
+    height: auto;     
+    padding-top: 200px; 
+  }
+
+  /*  FAQ spacing */
+  .faq {
+    gap: 32px;
+  }
+}
+
+h1, h3 {
+    font-weight: 700;
+}
+
+p {
+    font-weight: 400; 
+
+    color: hsl(292, 16%, 49%);
+}
