@@ -52,6 +52,10 @@ position: relative;
     
 }
 
+.faq-question:hover{
+color: rgb(182, 4, 182);
+}
+
 .faq-answer {
   display: none; /* hide initially */
 }
