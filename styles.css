@@ -6,7 +6,7 @@ body{
 }
 
 .header {
-background-image: url("assets/images/background-pattern-mobile.svg");
+background-image: url("background-pattern-mobile.svg");
 width:100% ;
 height:200px;
 position: relative;
